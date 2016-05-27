@@ -30,6 +30,10 @@ module.exports = {
         {
           test: /\.less/,
           loader: 'style!css!less'
+        },
+        {
+          test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url?limit=10000"
         }
       ]
     },
